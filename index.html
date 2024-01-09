@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roxandrea</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css.map">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Kalnia:wght@300;400;500;600&family=Kaushan+Script&family=Lobster&family=Lobster+Two&family=Norican&family=Open+Sans:wght@400;700&family=Reem+Kufi+Fun:wght@700&family=Roboto+Slab&family=Roboto:wght@100;300;500&family=Satisfy&display=swap" rel="stylesheet">
+</head>
+<body>
+
+        <!-- start audio background -->
+        <!-- <audio src="sound/hotel-sound.mp3" autoplay loop></audio> -->
+        <!-- <audio id="backgroundMusic" autoplay loop>
+            <source src="sound/hotel-sound.mp3" type="audio/mp3">
+        </audio> -->
+        <!-- end audio background -->
+
+        <!-- start navbar -->
+        <nav class="navbar navbar-expand-lg"> <!-- use 'sticky-top' if we want to make the navbar fixed during scrolling and the background does not change during the scrolling-->
+            <div class="container">
+                <a class="navbar-brand text-uppercase text-white fw-bold" href="#">Roxandrea</a> <!-- style="font-family: 'Satisfy', cursive;"-->
+                
+                <button 
+                class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#main" 
+                aria-controls="main" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation"
+                >
+                <i class="fa-solid fa-bars border-0"></i> 
+                </button>
+
+                <div class="collapse navbar-collapse" id="main">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="rooms.html">Rooms</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link " href="resturant.html">Restaurant</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+                
+                </div>
+            </div>
+        </nav>
+        <!-- end navbar -->
+
+        <!-- start landing -->
+        <div class="landing" style="padding-bottom: 7rem; height: 1000px;">
+            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="bg1 carousel-item active" data-bs-interval="1000" style="background-position: center center; background-size: cover;width:100% ;height:100%;background-image: url(images/bg1-.jpg); background-repeat: no-repeat; height: 1000px;"> 
+                    <!-- https://preview.colorlib.com/theme/roxandrea/images/bg_2.jpg -->
+                    <div class="container text_box" style="height: 1000px;">
+                        <div class="col-md-8"  style="margin-top: -180px;">
+                            <h1 class="text-white mb-3">Experience Epic Beauty</h2>
+                            <p class="text-uppercase text-white fw-bold">Roxandrea hotel & resort</p>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="bg2 carousel-item" data-bs-interval="2000" style="background-position: center center; background-size: cover;width:100% ;height:100%;background-image: url(images/bg2-.jpg); background-repeat: no-repeat;">
+                    <!-- https://preview.colorlib.com/theme/roxandrea/images/bg_1.jpg -->
+                    <div class="container text_box mt-2 pt-2 " style="height: 1000px;">
+                        <div class="col-md-8 " style="margin-top: -160px;">
+                            <h1 class="text-white mb-3" >Roxandrea</h2>
+                            <p class="text-uppercase text-white fw-bold">more than a hotal ... an experience</p>
+                            
+                        </div>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+        <!-- end landing -->
+
+        <!-- start check date -->
+        <div class="check-date">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 pr-1" style="background-color: rgba(182, 145, 0, 0.8) ;"> <!--#364968b4-->
+                        <form action="#">
+                            <div class="row gap-4"><!--style="display: flex; justify-content: space-between;"-->
+
+                                <!-- 1st element -->
+                                <div class="col-md px-4 py-3"> <!--px-4 py-3-->
+                                    <label for="in" class="text-uppercase form-control">Check-in date</label>
+                                    <input type="text" name="date-in" id="in" placeholder="Check-in Date" class="form-control">
+                                    <!-- <input type="date" name="date-in" id="in" placeholder="Check-in Date"> -->
+                                </div>
+                                <!-- 2nd element -->
+                                <div class="col-md px-4 py-3">
+                                    <label for="out" class="text-uppercase form-control">Check-out date</label>
+                                    <input type="text" name="date-out" id="out" placeholder="Check-out Date" class="form-control">
+                                    <!-- <input type="date" name="date-in" id="in" placeholder="Check-in Date"> -->
+                                </div>
+                                <!-- 3rd element -->
+                                <div class="col-md px-4 py-3">
+                                    <label for="room" class="text-uppercase form-control">room</label>
+                                    <div class="form-field">
+                                        <!-- <i class="fa-solid fa-angle-down"></i> -->
+                                        <select name="" id="" class="form-control" >
+                                            <option value="Suite">Suite</option>
+                                            <option value="Family Room">Family Room</option>
+                                            <option value="Deluxe Room">Deluxe Room</option>
+                                            <option value="Classic Room">Classic Room</option>
+                                            <option value="Superior Room">Superior Room</option>
+                                            <option value="Luxury Room">Luxury Room</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- 4th -->
+                                <div class="col-md px-4 py-3">
+                                    <label for="room" class="text-uppercase form-control">Guests</label>
+                                    <div class="form-field">
+                                        <!-- <i class="fa-solid fa-angle-down"></i> -->
+                                        <select name="" id="" class="form-control" >
+                                            <option value="1 Adult">1 Adult</option>
+                                            <option value="2 Adult">2 Adult</option>
+                                            <option value="3 Adult">3 Adult</option>
+                                            <option value="4 Adult">4 Adult</option>
+                                            <option value="5 Adult">5 Adult</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <!-- 5th -->
+                                <div class="col-md bg-dark-custom px-4 py-3" ><!--style="margin: -25px 0;" -->
+                                    <div class="btn btn-dark text-center py-0 px-0" style=" width: fit-content;">
+                                        <span class="text-uppercase" style="position: absolute; top: 50%; margin: 0 8px;
+                                        transform: translateY(-50%);
+                                        font-weight: 500;">Check Availability 
+                                            <p style="font-size: 80%; font-weight: 400;">Best Price Guaranteed!</p>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end check time -->
+        
+        <!-- start rooms pictures -->
+        <div class="rooms-imgs pt-0 pb-5" >
+            <div class="container" >
+                <!-- importatnt note: to make the elements besides each other without spaces use=> g-0 =>no gap => <div class="row g-0"> </div> -->
+                <div class="row g-0">
+                    <!-- we have 4 imgs at large and mediam but small one. remember that total grid is 12 rows -->
+                    <div class="col-lg-3 col-md-3 col-sm-12 text-center">
+                        <a href="#"
+                        style="background-image: url(images/room1.jpg); 
+                        /* https://preview.colorlib.com/theme/roxandrea/images/room-3.jpg */
+                        background-size: cover;
+                        width: 100%;
+                        height: 290px;">
+                        <h3 class="text-uppercase text-white fw-bold">special rooms</h3>
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-12 text-center">
+                        <div class="serv">
+                            <a href="#"
+                            style="background-image: url(images/bg2.jpg);
+                            /* https://preview.colorlib.com/theme/roxandrea/images/swimming-pool.jpg */
+                            background-size: cover;
+                            width: 100%;
+                            height: 290px;">
+                            <h3 class="text-uppercase text-white fw-bold">swimming pool</h3>
+
+                            </a>
+                        </div>
+                        
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-12 text-center">
+                        <div class="serv">
+                            <a href="#"
+                            style="background-image: url(https://preview.colorlib.com/theme/roxandrea/images/resto.jpg);
+                            background-size: cover;
+                            width: 100%;
+                            height: 290px;">
+                            <h3 class="text-uppercase text-white fw-bold">Restaurant</h3>
+
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-3 col-sm-12 text-center">
+                        <div class="serv">
+                            <a href="#"
+                            style="background-image: url(https://preview.colorlib.com/theme/roxandrea/images/sleep.jpg);
+                            /* https://preview.colorlib.com/theme/roxandrea/images/sleep.jpg */
+                            background-size: cover;
+                            width: 100%;
+                            height: 290px;">
+                            <h3 class="text-uppercase text-white fw-bold">suites & rooms</h3>
+
+                            </a>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end rooms pictures -->
+
+        <!-- start vision -->
+        <div class="vision pt-5 pb-5">
+            <div class="container">
+                <div class="text text-center">
+                    <span class=" text-uppercase">welcome to roxandrea hotel</span>
+                    <h2 class="mt-3 mb-4">A New Vision of Luxory Hotel</h2>
+                </div>
+
+                <div class="row g-2">
+                    <div class="col-md-3 col-sm-12 text-center vision-icon my-5">
+                        <div class="vsn bg-light">
+                            <i class="fa-solid fa-bell-concierge"></i>
+                            <h3>Friendly Service</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 text-center vision-icon my-5">
+                        <div class="vsn active" style="background-color: #312b30;">
+                            <i class="fa-solid fa-utensils text-light"></i>
+                            <h3 class="text-light">Get Breakfast</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 text-center vision-icon my-5">
+                        <div class="vsn bg-light">
+                            <i class="fa-solid fa-car"></i>
+                            <h3>Transfer Services</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-12 text-center vision-icon my-5">
+                        <div class="vsn bg-light">
+                            <i class="fa-solid fa-spa"></i>
+                            <h3>Suits & SPA</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-3  col-sm-12 text-center vision-icon my-5">
+                        <div class="vsn bg-light">
+                            <i class="fa-solid fa-bed"></i>
+                            <h3>Cozy Rooms</h3>
+                        </div>
+                    </div>
+                </div>
+                
+                
+            </div>
+        </div>
+        <!-- end vision -->
+
+        <!-- start master rooms -->
+        <div class="master-rooms ">
+            <div class="container-fluid bg-light pt-5 pb-5" >
+                <div class="text text-center pt-5 pb-5">
+                    <span class=" text-uppercase">roxandrea rooms</span>
+                    <h2 class="mt-3 mb-4">Hotel Master's Rooms</h2>
+                </div>
+            </div>
+            
+            <!-- 1st row -->
+            <div class="row  g-0">
+                <!-- we have 4 elements at large , at mediam 2 , at small 1 -->
+                <!-- img will take 2 rows as it like 2 elemnts -->
+                <!-- img -->
+                <div class="col-md-12 col-sm 12 col-lg-6">
+                    <div class="mstr-room" style="background-image: url(https://preview.colorlib.com/theme/roxandrea/images/bg_3.jpg); background-size: cover; height: 360px; background-position: center center;">
+                        <div class="mstr-room-text text-center px-4 py-4 w-100">
+                            <h2 class="text-light">Welcome to <a href="#">Roxandrea</a> Hotel</h2>
+                            <p class="mt-0 mb-1" style="color: rgba(255, 255, 255, 0.9);">A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div class="col-md-6 col-sm-12  col-lg-3 link-img">
+                    <a href="#" 
+                    style="background-image: url(https://preview.colorlib.com/theme/roxandrea/images/room-1.jpg);
+                        background-size: cover; height: 360px; display: block;"></a>
+                </div>
+                <!-- col-md-6 col-sm 12 col-lg-3  -->
+                <div class="col-md-6 col-sm-12 col-lg-3 price-stars ">
+                    <div class="price-text text-center " style="padding: 60px;"> <!--p-4 p-xl-5 -->
+                        <p class="stars mb-0">
+                            <i class="star fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                        </p>
+                        <p class="mb-0 per"><span class="me-1">$120.00</span> per night</p>
+                        <h3 class="mb-3"><a href="#">Suite Room</a></h3>
+                        <p class="pt-1"> <!-- mt-0 mb-1-->
+                            <a href="#" class="btn px-3 py-2">View Room Details <i class="fa-solid fa-arrow-right-long"></i></a>
+                            
+                        </p>
+                    </div>
+                </div>
+
+                <!-- 2nd row -->
+                <div class="container">
+                    <div class="row g-0">
+                        <!-- First group -->
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="family-group" onmouseover="hoverEffect(this)" onmouseout="resetEffect(this)">
+                                <div class="family-price-stars">
+                                    <!-- Your content for the first family-price-stars goes here -->
+                                    <div class="price-text text-center" style="padding: 60px;">
+                                        <p class="stars mb-0">
+                                            <i class="star fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                                        </p>
+                                        <p class="mb-0 per"><span class="me-1">$120.00</span> per night</p>
+                                        <h3 class="mb-3"><a href="#">Family Room</a></h3>
+                                        <p class="pt-1">
+                                            <a href="#" class="btn px-3 py-2">View Room Details <i class="fa-solid fa-arrow-right-long"></i></a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="family-link-img" style="background-image: url(https://preview.colorlib.com/theme/roxandrea/images/room-2.jpg);"></div>
+                            </div>
+                        </div>
+                
+                        <!-- Second group -->
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <div class="family-group" onmouseover="hoverEffect(this)" onmouseout="resetEffect(this)">
+                                <div class="family-price-stars">
+                                    <!-- Your content for the second family-price-stars goes here -->
+                                    <div class="price-text text-center" style="padding: 60px;">
+                                        <p class="stars mb-0">
+                                            <i class="star fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                                        </p>
+                                        <p class="mb-0 per"><span class="me-1">$120.00</span> per night</p>
+                                        <h3 class="mb-3"><a href="#">Deluxe Room</a></h3>
+                                        <p class="pt-1">
+                                            <a href="#" class="btn px-3 py-2">View Room Details <i class="fa-solid fa-arrow-right-long"></i></a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="family-link-img" style="background-image: url(https://preview.colorlib.com/theme/roxandrea/images/room-3.jpg);"></div>
+                            </div>
+                        </div>
+                        <!-- Add more groups as needed -->
+                    </div>
+                </div>
+
+
+                <!-- --------------------------------------- -->
+                <!-- 3rd row -->
+                <div class="col-md-6 col-sm-12  col-lg-3 link-img">
+                    <a href="#" 
+                    style="background-image: url(https://preview.colorlib.com/theme/roxandrea/images/room-4.jpg);
+                        background-size: cover; height: 360px; display: block;"></a>
+                </div>
+
+                <div class="col-md-6 col-sm-12 col-lg-3 price-stars ">
+                    <div class="price-text text-center " style="padding: 60px;"> <!--p-4 p-xl-5 -->
+                        <p class="stars mb-0">
+                            <i class="star fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                        </p>
+                        <p class="mb-0 per"><span class="me-1">$120.00</span> per night</p>
+                        <h3 class="mb-3"><a href="#">Luxury Room</a></h3>
+                        <p class="pt-1"> <!-- mt-0 mb-1-->
+                            <a href="#" class="btn px-3 py-2">View Room Details <i class="fa-solid fa-arrow-right-long"></i></a>
+                            
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12  col-lg-3 link-img">
+                    <a href="#" 
+                    style="background-image: url(https://preview.colorlib.com/theme/roxandrea/images/room-5.jpg);
+                        background-size: cover; height: 360px; display: block;"></a>
+                </div>
+
+                <div class="col-md-6 col-sm-12 col-lg-3 price-stars ">
+                    <div class="price-text text-center " style="padding: 60px;"> <!--p-4 p-xl-5 -->
+                        <p class="stars mb-0">
+                            <i class="star fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i>
+                        </p>
+                        <p class="mb-0 per"><span class="me-1">$120.00</span> per night</p>
+                        <h3 class="mb-3"><a href="#">Superior Room</a></h3>
+                        <p class="pt-1"> <!-- mt-0 mb-1-->
+                            <a href="#" class="btn px-3 py-2">View Room Details <i class="fa-solid fa-arrow-right-long"></i></a>                            
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end master rooms -->
+
+        <!-- start testimony -->
+        <div class="testimony py-5">
+            <!-- bg-light -->
+            
+            <!-- ========================== -->
+            <div id="carouselExampleCaptions" class="carousel slide mb-5" data-bs-ride="carousel" >
+                <div class="carousel-indicators">
+                    <!-- data-bs-target="#carouselExampleCaptions"  -->
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>                
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="container">
+                        <div class="text text-center pt-3 mb-5">
+                            <span class=" text-uppercase ">testimony</span>
+                            <h2 class="mb-4">Our Happy Guest Says</h2> <!-- mt-3  -->
+                        </div>
+                        <div class="user text-center " >
+                            <div class="user-over-all">
+                                <div class="user-img" style="background-image: url(https://preview.colorlib.com/theme/roxandrea/images/person_1.jpg); background-size: cover; ">
+                                    <span class="left-quote align-items-center justify-content-center d-flex text-left"><i class="fa-solid fa-quote-left"></i></span>
+                                
+                                </div>
+                            
+                                <!-- Stars container with display:flex to make stars appear in a single line -->
+                                <div class="text text-center mt-3" >
+                                    <p class="stars mb-4" style="display: inline-flex;">
+                                        <i class="star fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </p>
+                                    <p class="mb-4 mt-0">
+                                        A small river named Duden flows by their place and supplies it with the necessary regelialia. 
+                                        It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                                    </p>
+                                    <p class="name my-0">Nathan Smith</p>
+                                    <p class="guest-position text-uppercase">Guests</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+        
+                        
+                     
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="container">
+                        <div class="text text-center pt-3 mb-5">
+                            <span class=" text-uppercase ">testimony</span>
+                            <h2 class="mb-4">Our Happy Guest Says</h2> <!-- mt-3  -->
+                        </div>
+                        <div class="user text-center " >
+                            <div class="user-over-all">
+                                <div class="user-img" style="background-image: url(https://preview.colorlib.com/theme/roxandrea/images/person_2.jpg); background-size: cover; ">
+                                    <span class="left-quote align-items-center justify-content-center d-flex text-left">
+                                        <i class="fa-solid fa-quote-left"></i></span>
+                    
+                                </div>
+                            
+                                <!-- Stars container with display:flex to make stars appear in a single line -->
+                                <div class="text text-center mt-3" >
+                                    <p class="stars mb-4" style="display: inline-flex;">
+                                        <i class="star fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </p>
+                                    <p class="mb-4 mt-0">
+                                        A small river named Duden flows by their place and supplies it with the necessary regelialia. 
+                                        It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                                    </p>
+                                    <p class="name my-0">Nathan Smith</p>
+                                    <p class="guest-position text-uppercase">Guests</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+        
+                        
+                     
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="container">
+                        <div class="text text-center pt-3 mb-5">
+                            <span class=" text-uppercase ">testimony</span>
+                            <h2 class="mb-4">Our Happy Guest Says</h2> <!-- mt-3  -->
+                        </div>
+                        <div class="user text-center " >
+                            <div class="user-over-all">
+                                <div class="user-img" style="background-image: url(https://preview.colorlib.com/theme/roxandrea/images/person_1.jpg); background-size: cover; ">
+                                    <span class="left-quote align-items-center justify-content-center d-flex text-left">
+                                        <i class="fa-solid fa-quote-left"></i>
+                                    </span>
+                                </div>
+                            
+                                <!-- Stars container with display:flex to make stars appear in a single line -->
+                                <div class="text text-center mt-3" >
+                                    <p class="stars mb-4" style="display: inline-flex;">
+                                        <i class="star fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </p>
+                                    <p class="mb-4 mt-0">
+                                        A small river named Duden flows by their place and supplies it with the necessary regelialia. 
+                                        It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                                    </p>
+                                    <p class="name my-0">Nathan Smith</p>
+                                    <p class="guest-position text-uppercase">Guests</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+        
+                        
+                     
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="container">
+                        <div class="text text-center pt-3 mb-5">
+                            <span class=" text-uppercase ">testimony</span>
+                            <h2 class="mb-4">Our Happy Guest Says</h2> <!-- mt-3  -->
+                        </div>
+                        <div class="user text-center " >
+                            <div class="user-over-all">
+                                <div class="user-img" style="background-image: url(https://preview.colorlib.com/theme/roxandrea/images/person_2.jpg); background-size: cover; ">
+                                    <span class="left-quote align-items-center justify-content-center text-left d-flex">
+                                        <i class="fa-solid fa-quote-left"></i>
+                                    </span>
+                                </div>
+                            
+                                <!-- Stars container with display:flex to make stars appear in a single line -->
+                                <div class="text text-center mt-3" >
+                                    <p class="stars mb-4" style="display: inline-flex;">
+                                        <i class="star fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </p>
+                                    <p class="mb-4 mt-0">
+                                        A small river named Duden flows by their place and supplies it with the necessary regelialia. 
+                                        It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                                    </p>
+                                    <p class="name my-0">Nathan Smith</p>
+                                    <p class="guest-position text-uppercase">Guests</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+        
+                        
+                     
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="container">
+                        <div class="text text-center pt-3 mb-5">
+                            <span class=" text-uppercase ">testimony</span>
+                            <h2 class="mb-4">Our Happy Guest Says</h2> <!-- mt-3  -->
+                        </div>
+                        <div class="user text-center " >
+                            <div class="user-over-all">
+                                <div class="user-img" style="background-image: url(https://preview.colorlib.com/theme/roxandrea/images/person_1.jpg); background-size: cover; ">
+                                    <span class="left-quote align-items-center justify-content-center d-flex text-left">
+                                        <i class="fa-solid fa-quote-left"></i>
+                                    </span>
+                                </div>
+                            
+                                <!-- Stars container with display:flex to make stars appear in a single line -->
+                                <div class="text text-center mt-3" >
+                                    <p class="stars mb-4" style="display: inline-flex;">
+                                        <i class="star fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </p>
+                                    <p class="mb-4 mt-0">
+                                        A small river named Duden flows by their place and supplies it with the necessary regelialia. 
+                                        It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+                                    </p>
+                                    <p class="name my-0">Nathan Smith</p>
+                                    <p class="guest-position text-uppercase">Guests</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+        
+                        
+                     
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <!-- end testimony -->
+
+        <!-- start vedio recomend -->
+        <!-- vedio tag => the vedio must be on my devicve => to download the video => use youtube downloader (put ur vedio link of the the vedio youtube) => an online tool-->
+        <!-- iframe => go to the vedio on the youtube and get from share => embeded '<>' and copy that  -->
+        <div class="recomended-hotel-vedio p-0 d-block position-relative "> <!--mb-5 -->
+            <div class="video-container">
+                <!-- <iframe width="90%" height="100%" src="https://www.youtube.com/embed/ism1XqnZJEg?autoplay=1&controls=0&showinfo=0&autohide=1&mute=1&loop=1&playlist=ism1XqnZJEg&modestbranding=1" frameborder="0" allowfullscreen></iframe> -->
+                <video src="vedio/hotel.mp4" autoplay muted loop width="100%" ></video>
+            </div>
+            <div class="container position-relative " style="bottom: 290px;">
+              <div class="row text-left d-flex justify-content-start align-items-ends" >
+                <div class="col-md-8">
+                  <div class="text" style="margin-bottom: 0.5rem;">
+                    <h1 class="mt-0 text-left" 
+                    style="font-size: 60px;
+                    font-weight: 600;
+                    /* margin-bottom: 0.5rem; */
+                    color: #fff;
+                    font-family: 'Playfair Display', Arial, serif;">We're Most Recommended Hotel</h1>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- end vedio recomend -->
+
+        <!-- start resturant -->
+        <!--  py-5 -->
+        <div class="resturant " 
+        style="background-repeat: repeat; ; background-image: url(https://preview.colorlib.com/theme/roxandrea/images/restaurant-pattern.jpg) ;">
+            <div class="container mb-5">
+                <!-- <div class="text text-center pb-3 mb-5">
+                    <span class=" text-uppercase">resturant</span>
+                    <h2 class="mt-3 mb-4">Resturant</h2>
+                </div> -->
+                <div class="row justify-content-center mb-5 pb-3" style="margin-top: 140px;">
+                    <div class="col-md-7 text-center text">
+                        <span class=" text-uppercase">resturant</span>
+                        <h2 class="mt-3 mb-4">Resturant</h2>
+                    </div>
+                </div>
+                <div class="fullcol">
+
+                <!-- column 1 -->
+                <div class="column1">
+                    <div class="card1">
+                        <p class="price ">$20.00</p>
+                        <div class="entry-card">
+                            <h5 class="text-center">Pizza</h5> <!--Grilled Crab with Onion-->
+                            <p class="para">A small river named Duden flows by their  place <br> and supplies</p>
+                            <div class="image right">
+                                <img src="images/food1.jpg" alt="">
+                                <!-- https://preview.colorlib.com/theme/roxandrea/images/menu-1.jpg -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <p class="price ">$29.00</p>
+                        <div class="entry-card">
+                            <h5 class="text-center">Grilled Beef with potatoes</h5>
+                            <p class="para">A small river named Duden flows by their  place <br> and supplies</p>
+                            <div class="image right">
+                                <img src="images/food2.jpg" alt="">
+                                <!-- https://preview.colorlib.com/theme/roxandrea/images/menu-2.jpg -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <p class="price ">$20.00</p>
+                        <div class="entry-card">
+                            <h5 class="text-center"> Fried piece steak</h5> <!--Grilled Beef with potatoes-->
+                            <p class="para">A small river named Duden flows by their  place <br> and supplies</p>
+                            <div class="image right">
+                                <img src="images/food3.jpg" alt="">
+                                <!-- https://preview.colorlib.com/theme/roxandrea/images/menu-3.jpg -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <p class="price ">$20.00</p>
+                        <div class="entry-card">
+                            <h5 class="text-center">Grilled Beef with potatoes </h5>
+                            <p class="para">A small river named Duden flows by their  place <br> and supplies</p>
+                            <div class="image right">
+                                <img src="images/food4.jpg" alt="">
+                                <!-- https://preview.colorlib.com/theme/roxandrea/images/menu-4.jpg -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- column 2 -->
+                <div class="column1">
+
+                    <div class="card1">
+                        <p class="price right">$49.91</p>
+                        <div class="entry-card">
+                            <h5 class="text-center right"> Shrimp sauteed garlic soy</h5> <!--Grilled Crab with Onion-->
+                            <p class="para right">A small river named Duden flows by their  place <br> and supplies</p>
+                            <div class="image left">
+                                <img src="images/food5.jpg" alt="">
+                                <!-- https://preview.colorlib.com/theme/roxandrea/images/menu-5.jpg -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <p class="price right">$29.00</p>
+                        <div class="entry-card">
+                            <h5 class="text-center right">Grilled Beef with macaroni</h5>
+                            <p class="para right">A small river named Duden flows by their  place <br> and supplies</p>
+                            <div class="image ">
+                                <img src="images/food6.jpg" alt="">
+                                <!-- https://preview.colorlib.com/theme/roxandrea/images/menu-6.jpg -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <p class="price right">$20.00</p>
+                        <div class="entry-card">
+                            <h5 class="text-center right">Grilled Beef with potatoes</h5>
+                            <p class="para right">A small river named Duden flows by their  place <br> and supplies</p>
+                            <div class="image">
+                                <img src="images/food7.jpg" alt="">
+                                <!-- https://preview.colorlib.com/theme/roxandrea/images/menu-7.jpg -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card1">
+                        <p class="price right">$20.00</p>
+                        <div class="entry-card">
+                            <h5 class="text-center right">Grilled Beef with potatoes</h5>
+                            <p class="para right">A small river named Duden flows by their  place <br> and supplies</p>
+                            <div class="image">
+                                <img src="images/food8.jpg" alt="">
+                                <!-- https://preview.colorlib.com/theme/roxandrea/images/menu-8.jpg -->
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                
+                </div>
+            </div>
+        </div>
+        <!-- end resturant -->
+
+        <!-- start blog -->
+        <div class="blog">
+            <div class="container-fluid pt-5 pb-5" >
+                <div class="text text-center pt-5 pb-5">
+                    <span class=" text-uppercase">read blog</span>
+                    <h2 class="mt-3 mb-4">Recent Blog</h2>
+                </div>
+                <div class="row">
+                    <!-- 1st -->
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="blog-entry">
+
+                            <a href="#" class="position-relative d-block"
+                            style="background-image: url(https://preview.colorlib.com/theme/roxandrea/images/image_1.jpg );
+                            /* */
+                            background-size: cover; background-repeat: no-repeat; height: 250px;">
+                            </a>
+
+                            <div class="text text-center mt-3">
+                                <div class="meta mb-2 text-uppercase">
+                                    <div><a href="#">dec 24, 2023</a></div>
+                                    <div><a href="#">admin</a></div>
+                                    <div><a href="#" class="meta-chat"><i class="fa-solid fa-message"></i> 3</a></div>
+
+                                </div>
+
+                                <h3 style="font-size: 20px; margin-bottom: 16px; line-height: 1.5; color: #000000; font-weight: 400; font-family: 'Playfair Display', Arial, serif;">
+                                    <a href="#" style="color: #000000; text-decoration: none;">Even the all-powerful Pointing has no control about the blind texts
+                                    READ MORE
+                                    </a>
+                                </h3>
+                                <p class="text-uppercase mt-0 mb-1" style="font-size: 12px;">read more</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 2nd -->
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="blog-entry">
+                            
+                            <a href="" class="position-relative d-block"
+                            style="background-image: url(https://preview.colorlib.com/theme/roxandrea/images/image_2.jpg);
+                            background-size: cover; background-repeat: no-repeat; height: 250px;">
+                            </a>
+
+                            <div class="text text-center mt-3">
+                                <div class="meta mb-2 text-uppercase">
+                                    <div><a href="#">dec 24, 2023</a></div>
+                                    <div><a href="#">admin</a></div>
+                                    <div><a href="#" class="meta-chat"><i class="fa-solid fa-message"></i> 3</a></div>
+
+                                </div>
+
+                                <h3 style="font-size: 20px; margin-bottom: 16px; line-height: 1.5; color: #000000; font-weight: 400; font-family: 'Playfair Display', Arial, serif;">
+                                    <a href="#" style="color: #000000; text-decoration: none;">Even the all-powerful Pointing has no control about the blind texts
+                                    READ MORE
+                                    </a>
+                                </h3>
+                                <p class="text-uppercase mt-0 mb-1" style="font-size: 12px;">read more</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 3rd -->
+                    <div class="col-lg-4 col-md-4 col-sm-12">
+                        <div class="blog-entry">
+                            
+                            <a href="" class="position-relative d-block"
+                            style="background-image: url(https://preview.colorlib.com/theme/roxandrea/images/image_3.jpg);
+                            background-size: cover; background-repeat: no-repeat; height: 250px;">
+                            </a>
+
+                            <div class="text text-center mt-3">
+                                <div class="meta mb-2 text-uppercase">
+                                    <div><a href="#">dec 24, 2023</a></div>
+                                    <div><a href="#">admin</a></div>
+                                    <div><a href="#" class="meta-chat"><i class="fa-solid fa-message"></i> 3</a></div>
+
+                                </div>
+
+                                <h3 style="font-size: 20px; margin-bottom: 16px; line-height: 1.5; color: #000000; font-weight: 400; font-family: 'Playfair Display', Arial, serif;">
+                                    <a href="#" style="color: #000000; text-decoration: none;">Even the all-powerful Pointing has no control about the blind texts
+                                    READ MORE
+                                    </a>
+                                </h3>
+                                <p class="text-uppercase mt-0 mb-1" style="font-size: 12px;">read more</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end blog -->
+
+        <!-- start instagram -->
+        <div class="instagram pt-5";>
+            <div class="container">
+                <div class="text text-center pt-5 pb-5">
+                    <span class=" text-uppercase">photos</span>
+                    <h2 class="mt-3 mb-4">Instagram</h2>
+                </div>
+            </div>
+            <!-- No gutters => he gutters between columns in our predefined grid classes can be removed with .g-0. This removes the negative margins from .row and the horizontal padding from all immediate children columns -->
+            <div class="row g-0">
+                <div class="col-sm-12 col-md">
+                    <div class="insta-img" style="background-image: url(https://preview.colorlib.com/theme/roxandrea/images/insta-1.jpg);">
+                        <div class="insta-icon text-center ">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md">
+                    <div class="insta-img" style="background-image: url(https://preview.colorlib.com/theme/roxandrea/images/insta-2.jpg);">
+                        <div class="insta-icon text-center">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md">
+                    <div class="insta-img" style="background-image: url(https://preview.colorlib.com/theme/roxandrea/images/insta-3.jpg);">
+                        <div class="insta-icon text-center">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md">
+                    <div class="insta-img" style="background-image: url(https://preview.colorlib.com/theme/roxandrea/images/insta-4.jpg);">
+                        <div class="insta-icon text-center">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-12 col-md">
+                    <div class="insta-img" style="background-image: url(https://preview.colorlib.com/theme/roxandrea/images/insta-5.jpg);">
+                        <div class="insta-icon text-center">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end instagram -->
+
+        <!-- start footer -->
+        <div class="footer py-5" style="background-color: #000000;"> <!-- bg-dark -->
+            <div class="container py-5">
+                <div class="row mb-5">
+                    <!-- 1st col -->
+                    <div class="text col-lg-3 col-md-3 col-sm-12">
+                        <h2>Roxandrea</h2>
+                        <p class="mb-5">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+                        <ul class="list-unstyled d-flex gap-4">
+                            <li class="social-media">
+                                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                            </li>
+                            <li class="social-media">
+                                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                            </li>
+                            <li class="social-media">
+                                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- 2nd col -->
+                    <div class="text col-lg-3 col-md-3 col-sm-12 mb-4">
+                        <div class="inner-col ms-5">
+                            <h2>Useful Links</h2>
+                            <ul class="list-unstyled">
+                                <li><a href="#" class="py-2 d-block">Blog</a></li>
+                                <li><a href="#" class="py-2 d-block">Rooms</a></li>
+                                <li><a href="#" class="py-2 d-block">Amenities</a></li>
+                                <li><a href="#" class="py-2 d-block">Gift Card</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 3rd col -->
+                    <div class="text col-lg-3 col-md-3 col-sm-12 mb-4">
+                        <h2>Privacy</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="py-2 d-block">Career</a></li>
+                            <li><a href="#" class="py-2 d-block">About Us</a></li>
+                            <li><a href="#" class="py-2 d-block">Contact Us</a></li>
+                            <li><a href="#" class="py-2 d-block">Services</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- 4rd col -->
+                    <div class="text col-lg-3 col-md-3 col-sm-12 mb-4">
+                        <h2>Have a Questions?</h2>
+                        <div class="block">
+                            <ul class="list-unstyled">
+                                <li class="d-flex gap-4">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <p class="text" style="margin-top: -6px; ">203 Fake St. Mountain View, San Francisco, California, USA</p>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex gap-4">
+                                        <i class="fa-solid fa-phone" style="margin-top: 6px;"></i>
+                                        <p class="phone">+2 392 3929 210</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="d-flex gap-4">
+                                        <i class="fa-solid fa-envelope rounded-circle" style="margin-top: 7px;"></i>
+                                        <p style="color: #fff;">info@yourdomain.com</p>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 text-center copyright">
+                        <p class="mb-1">Copyright &copy; 2024 All rights reserved | This is made with <i class="fa-solid fa-heart"></i></p> 
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- end footer -->
+    <!-- ------------------------------------------ -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/all.min.js"></script> <!-- js file of font awesome --> 
+
+    <!-- main file js -->
+    <script src="js/main.js"></script>
+
+</body>
+</html>
+
+
+<!-- max-width: 50%;
+    position: relative;
+    right: -50%;
+    top: -47%; -->
